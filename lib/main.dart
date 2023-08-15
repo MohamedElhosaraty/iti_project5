@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:untitled4/firebase_options.dart';
+import 'package:untitled4/singup.dart';
 import 'package:untitled4/view/login_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -18,7 +25,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: Login_Screen(),
+      home: Sing_upScreen(),
     );
   }
 }
