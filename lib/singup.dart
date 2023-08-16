@@ -144,7 +144,8 @@ class _Sing_upScreenState extends State<Sing_upScreen> {
                     Text('Aleady a member?',
                       style: TextStyle(fontSize: 20),),
                     TextButton(onPressed: (){
-                      Navigator.of(context).pushNamed('login');
+                      Navigator.push(
+                          context, MaterialPageRoute(builder: (context) => Login_Screen()));
                     },
                         child: Text('login',
                             style: TextStyle(fontSize: 20)))
