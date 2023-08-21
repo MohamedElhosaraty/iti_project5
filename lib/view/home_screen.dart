@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled4/view/screens/body1.dart';
 import 'package:untitled4/view/screens/body2.dart';
-import 'package:untitled4/view/screens/body3.dart';
+import 'package:untitled4/view/screens/category2.dart';
 
 class HomeScreen extends StatefulWidget {
   String email;
@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List <Widget> page =[
     body1(),
     body2(),
-    body3(),
+    Category2(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         items: [
         BottomNavigationBarItem(icon: Icon(Icons.home),label: 'body1'),
         BottomNavigationBarItem(icon: Icon(Icons.security),label: 'body2'),
-        BottomNavigationBarItem(icon: Icon(Icons.more),label: 'body3'),
+        BottomNavigationBarItem(icon: Icon(Icons.category_outlined),label: 'category'),
       ],
       onTap: (value){
         setState(() {

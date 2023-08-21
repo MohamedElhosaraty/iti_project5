@@ -4,6 +4,8 @@ import 'package:untitled4/singup.dart';
 import 'package:untitled4/view/home_screen.dart';
 import 'package:untitled4/view/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:untitled4/view/screens/category2.dart';
+import 'package:untitled4/view/screens/category.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
